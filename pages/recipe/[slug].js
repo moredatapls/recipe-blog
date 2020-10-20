@@ -10,7 +10,7 @@ export default function BlogTemplate({ content, slug, config }) {
   }
 
   return (
-    <Layout siteTitle={slug}>
+    <Layout siteTitle={content.title}>
       <article className="blog">
         <figure className="blog__hero">
           <img
@@ -33,7 +33,7 @@ export default function BlogTemplate({ content, slug, config }) {
             content.ingredients.map(ingredient => (
               <a>
                 <li>
-                  {ingredient.name}
+                    {ingredient.quantity && ingredient.quantity + " "}{ingredient.unit && " " + ingredient.unit}{ingredient.quantity > 1 ? "s " : ""}{ingredient.quantity && ingredient.unit && " of "}<b>{ingredient.name}</b>
                 </li>
               </a>
             ))}
@@ -41,14 +41,16 @@ export default function BlogTemplate({ content, slug, config }) {
         </div>
         <div className="blog__instructions">
           <h2>Instructions</h2>
-          {content.steps.length >= 1 &&
-            content.steps.map(steps => (
-              <a>
-                <li>
-                  {steps.text}
-                </li>
-              </a>
-            ))}
+          <ul className="list">
+            {content.steps.length >= 1 &&
+              content.steps.map(steps => (
+                <a>
+                  <li>
+                    {steps.text}
+                  </li>
+                </a>
+              ))}
+          </ul>
         </div>
       </article>
       <style jsx>
@@ -135,7 +137,8 @@ export default function BlogTemplate({ content, slug, config }) {
             color: inherit;
           }
           .blog__instructions ul {
-            list-style: initial;
+            list-style-image: initial;
+            list-style-type: initial;
           }
           .blog__instructions ul ol {
             margin-left: 1.25rem;
@@ -226,7 +229,7 @@ export async function getStaticProps({ ...ctx }) {
       content,
       slug,
       config
-    },
+    }
   }
 }
 

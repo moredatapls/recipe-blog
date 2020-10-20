@@ -1,0 +1,76 @@
+{
+    "title": "Quinoa Salad",
+    "description": "A simple and quick quinoa salad",
+    "date": "2020-09-24T17:56:30+02:00",
+    "lang": "en",
+    "authors": [
+        "Helge",
+        "Alex"
+    ],
+    "sources": [
+        "links..."
+    ],
+    "hero_image": "../static/bread.jpeg",
+    "ingredients": [
+        {
+            "name": "Quinoa",
+            "quantity": 1,
+            "unit": "cup"
+        },
+        {
+            "name": "Water",
+            "quantity": 2,
+            "unit": "cup"
+        },
+        {
+            "name": "Cherry Tomatoes"
+        },
+        {
+            "name": "Green Onions"
+        },
+        {
+            "name": "Avocado"
+        },
+        {
+            "name": "Cucumber"
+        },
+        {
+            "name": "Tahini",
+            "quantity": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Lemon Juice",
+            "quantity": 5,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Olive Oil",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt"
+        },
+        {
+            "name": "Pepper"
+        },
+        {
+            "name": "Seeds etc. for taste"
+        }
+    ],
+    "steps": [
+        {
+            "text": "Boil the quinoa with the water and a pinch of salt until the water is boiled off"
+        },
+        {
+            "text": "Meanwhile, dice the veggies to your linking"
+        },
+        {
+            "text": "Then, prepare the dressing. Mix the tahini, lemon juice, olive oil and add salt and pepper to taste"
+        },
+        {
+            "text": "Once the quinoa is ready, mix all the ingredients in a bowl"
+        }
+    ]
+}

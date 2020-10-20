@@ -65,6 +65,9 @@
             "step": "bake",
             "appliance": "oven",
             "text": "Bake the bread for an hour until the crust is a dark brown."
+        },
+        {
+            "text": "Let it cool down"
         }
     ]
 }

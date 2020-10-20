@@ -40,23 +40,23 @@ export default function Meta(props) {
                     text-decoration-color: inherit;
                     }
                     ul {
-                    list-style: none;
-                    margin: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    padding-top: 0;
-                    list-style-position: outside;
-                    list-style-image: none;
+                        list-style: none;
+                        margin: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 0;
+                        list-style-position: inside;
+                        list-style-image: none;
                     }
                     ol {
-                    margin: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    padding-top: 0;
-                    list-style-position: outside;
-                    list-style-image: none;
+                        margin: 0;
+                        padding-left: 0;
+                        padding-bottom: 0;
+                        padding-right: 0;
+                        padding-top: 0;
+                        list-style-position: inside;
+                        list-style-image: none;
                     }
                     ul, ol, p {
                     margin-bottom: 1.45rem;
