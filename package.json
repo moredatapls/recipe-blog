@@ -6,15 +6,15 @@
   "version": "0.1.0",
   "author": "kendallstrautman",
   "scripts": {
-    "dev": "next",
-    "develop": "yarn dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
+    "develop": "npm run dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
+    "export": "NODE_OPTIONS=--openssl-legacy-provider next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
     "next": "^9.3.3",
-    "node-glob": "^1.2.0",
     "raw-loader": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

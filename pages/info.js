@@ -2,12 +2,13 @@ import Layout from '../components/Layout'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
-export default function Info({ frontmatter, markdownBody, title }) {
+export default function Info({ frontmatter, markdownBody, title, description }) {
   return (
     <Layout
       pathname="info"
       bgColor={frontmatter.background_color}
       siteTitle={title}
+      siteDescription={description}
     >
       <section className="info_blurb">
         <ReactMarkdown source={markdownBody} />
@@ -36,12 +37,13 @@ export default function Info({ frontmatter, markdownBody, title }) {
 
 export async function getStaticProps() {
   const content = await import(`../data/info.md`)
-  const config = await import(`../data/config.json`)
+  const config = require('../data/config.json')
   const data = matter(content.default)
 
   return {
     props: {
       title: config.title,
+      description: config.description,
       frontmatter: data.data,
       markdownBody: data.content,
     },

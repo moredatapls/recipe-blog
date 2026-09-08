@@ -8,25 +8,26 @@ export default function Header(props) {
         role="navigation"
         aria-label="main navigation"
       >
-        <Link href="/">
-          <h1>{props.siteTitle}</h1>
-        </Link>
+        <Link href="/"><a className="brand">{props.siteTitle}</a></Link>
         <div>
           <Link href={`${typeof window !== "undefined" &&
           window.location.pathname == "/info" ?
           "/" : "/info"}`}>
-            <h1>{`${typeof window !== "undefined" &&
+            <a>{`${typeof window !== "undefined" &&
           window.location.pathname == "/info" ?
-          "close" : "info"}`}</h1>
+          "close" : "info"}`}
+          </a>
           </Link>
         </div>
       </nav>
       <style jsx>
         {`
-          h1 {
+          .brand {
+            font-size: 1.35rem;
+            font-weight: 500;
             margin-bottom: 0;
           }
-          h1:hover {
+          a:hover {
             cursor: pointer;
           }
           nav {
