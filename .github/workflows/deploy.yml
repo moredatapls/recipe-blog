@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Build site
+        run: npm run build
+
       - name: Export static site
         run: npm run export
 
