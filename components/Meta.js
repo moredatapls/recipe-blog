@@ -39,6 +39,9 @@ export default function Meta(props) {
                     opacity: 0.5;
                     text-decoration-color: inherit;
                     }
+                    .recipe-content a {
+                    font-weight: 600;
+                    }
                     ul {
                         list-style: none;
                         margin: 0;

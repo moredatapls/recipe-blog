@@ -18,6 +18,9 @@ export default function Info({ frontmatter, markdownBody, title, description }) 
           max-width: 800px;
           padding: 1.5rem 1.25rem;
         }
+        .info_blurb :global(a) {
+          font-weight: 600;
+        }
 
         @media (min-width: 768px) {
           .info_blurb {

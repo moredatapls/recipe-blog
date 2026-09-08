@@ -78,6 +78,9 @@ The older JSON recipes in `recipes/` are retained as a possible future source
 for structured calculations. They are not currently displayed; Markdown files
 are the active recipe format.
 
+The exported site is configured for the custom domain
+`stupidlysimplevegan.org` via `public/CNAME`.
+
 ## Project structure
 
 | Path | Purpose |
