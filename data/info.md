@@ -8,3 +8,5 @@ I hate overcrowded recipe blogs where the authors tell their life stories. So I 
 It's my own recipe collection. I'm happy if you find it useful.
 
 If you want to contribute, head over to [GitHub](https://github.com/moredatapls/recipe-blog).
+
+The blog is hosted at [stupidlysimplevegan.org](https://stupidlysimplevegan.org).
